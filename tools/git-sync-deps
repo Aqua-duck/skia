@@ -206,7 +206,7 @@ def git_sync_deps(deps_file_path, command_line_os_requests, verbose):
   for directory in sorted(dependencies):
     if not isinstance(dependencies[directory], basestring):
       if verbose:
-        print 'Skipping "%s".' % directory
+        print('Skipping "%s".' % directory)
       continue
     if '@' in dependencies[directory]:
       repo, checkoutable = dependencies[directory].split('@', 1)
